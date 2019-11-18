@@ -62,14 +62,13 @@ clear
 clear
 
 echo '[Interface]
-Address = 172.16.0.2/32
+Address = 172.16.0.2/12
 DNS = 1.1.1.1
 PrivateKey = '$PRIVATEKEY'
 
 [Peer]
 PublicKey = '$CLOUDFLAREKEY'
 AllowedIPs = 0.0.0.0/0
-AllowedIPs = ::/0
 Endpoint = engage.cloudflareclient.com:2408' > client.conf
 
 echo 'Wireguard has successfully installed in your VPS
@@ -82,14 +81,13 @@ _______________________
 Your Client Config is:
 
 [Interface]
-Address = 172.16.0.2/32
+Address = 172.16.0.2/12
 DNS = 1.1.1.1
 PrivateKey = '$PRIVATEKEY'
 
 [Peer]
 PublicKey = '$CLOUDFLAREKEY'
 AllowedIPs = 0.0.0.0/0
-AllowedIPs = ::/0
 Endpoint = engage.cloudflareclient.com:2408
 
 _______________________
