@@ -1,2 +1,0 @@
-# MicoJohn
-My Own Deaf
